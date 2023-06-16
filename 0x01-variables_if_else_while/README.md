@@ -3,3 +3,4 @@
 2-print_alphabet : a program that prints the alphabet in lowercase followed by a new line.
 4-print_alphabt : a program that prints the alphabet and skips e and q
 5-print_numbers.c : a program that prints all the single digit base 10 numbers
+6-print_numberz.c : a program tha prints all the single digit base 10 numbers
