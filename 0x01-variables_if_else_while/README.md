@@ -4,3 +4,4 @@
 4-print_alphabt : a program that prints the alphabet and skips e and q
 5-print_numbers.c : a program that prints all the single digit base 10 numbers
 6-print_numberz.c : a program tha prints all the single digit base 10 numbers
+7-print_tebahpla.c : s program that prints the lower case aplhabet in reverse followed by new line character.
