@@ -7,3 +7,4 @@
 7-print_tebahpla.c : s program that prints the lower case aplhabet in reverse followed by new line character.
 8-print_base16.c : a program that prints all the numbers of base 16 in lower case followed by a new line.
 9-print_comb.c : a program that prints all possible combinations of single-digit numbers.
+100-print_comb3.c : a program that prints all possible different combinations of two digits.
