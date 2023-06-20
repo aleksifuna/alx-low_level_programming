@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * print_to_98 - prints all nutural numbers from a given starting point to 98
+ * @n: number input to start from
  */
 void print_to_98(int n)
 {
@@ -12,11 +13,11 @@ void print_to_98(int n)
 			n++;
 		}
 	}
-	else 
+	else
 	{
 		while (n >= 98)
 		{
-			printf("%d, ",n);
+			printf("%d, ", n);
 			n--;
 		}
 	}
