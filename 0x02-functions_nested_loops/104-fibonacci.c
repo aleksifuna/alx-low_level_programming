@@ -7,13 +7,13 @@
  */
 int main(void)
 {
-	unsigned long long int i,k,j;
+	unsigned long int i, k, j;
 	int count;
 
 
 	i = 1;
 	j = 2;
-	printf("%llu, %llu, ", i, j);
+	printf("%lu, %lu, ", i, j);
 	count = 0;
 	while (count < 96)
 	{
@@ -21,10 +21,10 @@ int main(void)
 		i = j;
 		j = k;
 
-		if(count < 95)
-			printf("%llu, ", k);
+		if (count < 95)
+			printf("%lu, ", k);
 		else
-			printf("%llu\n", k);
+			printf("%lu\n", k);
 		count++;
 	}
 	return (0);
