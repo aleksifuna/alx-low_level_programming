@@ -13,12 +13,12 @@ int main(void)
 	c = 0;
 
 	printf("%ld, %ld, ", i, j);
-	while (c <= 48)
+	while (c < 48)
 	{
 		d = i + j;
 		i = j;
 		j = d;
-		if (c == 48)
+		if (c == 47)
 			printf("%ld\n", d);
 		else
 			printf("%ld, ", d);
