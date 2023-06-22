@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - prints the numbers from 1-100 with fuzz instead of any multiple of 3
- * buzz instead of any multiple of 5 and fizzBuzz instead of any multiple of 
+ * buzz instead of any multiple of 5 and fizzBuzz instead of any multiple of
  * both 3 and 5.
  *
  * Return: Always 0 (success)
