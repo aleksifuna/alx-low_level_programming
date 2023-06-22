@@ -9,3 +9,4 @@
 8-print_square.c: a function that prints a square using #
 9-fizz_buzz.c: prints from 1 - 100 with fizz where there is a multpile of 3, buzz where there is a multiple of 5 and fizzbuz where there is multiple of both 5 and 3.
 10-print_triangle.c: prints a triangle with #
+100-prime_factor.c: a program that finds and prints the largest prime factor of the number 612852475143, followed by a new line.
