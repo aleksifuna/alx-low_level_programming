@@ -8,3 +8,4 @@
 7-print_diagonal.c: function that prints a diagonal in terminal.
 8-print_square.c: a function that prints a square using #
 9-fizz_buzz.c: prints from 1 - 100 with fizz where there is a multpile of 3, buzz where there is a multiple of 5 and fizzbuz where there is multiple of both 5 and 3.
+10-print_triangle.c: prints a triangle with #
