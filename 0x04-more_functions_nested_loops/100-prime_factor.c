@@ -13,7 +13,7 @@ int main(void)
 
 	j = 612852475143;
 
-	max = - 1;
+	max =- 1;
 
 	while (j % 2 == 0)
 	{
@@ -21,7 +21,7 @@ int main(void)
 
 		j /= 2;
 	}
-	for (i =3; i <= sqrt(j); i = i + 2)
+	for (i = 3; i <= sqrt(j); i = i + 2)
 		while (j % i == 0)
 		{
 			max = i;
