@@ -13,7 +13,7 @@ int main(void)
 
 	j = 612852475143;
 
-	max =- 1;
+	max = -1;
 
 	while (j % 2 == 0)
 	{
