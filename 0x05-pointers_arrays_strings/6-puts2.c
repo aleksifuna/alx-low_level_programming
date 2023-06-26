@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * puts2 - prints every other character of a string with the first character, 
+ * puts2 - prints every other character of a string with the first character,
  * followed by a line line.
  * @str: string input
  *
@@ -17,7 +17,7 @@ void puts2(char *str)
 	}
 
 	i = 0;
-	j = count -1;
+	j = count - 1;
 
 	while (i < j)
 	{
