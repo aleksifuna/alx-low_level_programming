@@ -2,3 +2,4 @@
 1-strncat.c - function that concatinates two strings upto n bytes.
 
 3-strcomp.c function that compares two strings.
+4-rev_array.c function that reverses an integer array.
