@@ -9,14 +9,15 @@ char *rot13(char *str)
 	int i, j;
 
 	char alph[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char rot[] ="NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		for(j = 0; j < 52; j++)
+		for (j = 0; j < 52; j++)
 		{
 			if (str[i] == alph[j])
 			{
-				str[i] = rot[j];
+			str[i] = rot[j];
 				break;
 			}
 		}
