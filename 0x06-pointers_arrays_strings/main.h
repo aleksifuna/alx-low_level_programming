@@ -6,3 +6,4 @@ char *string_toupper(char *);
 char *cap_string(char *);
 char *leet(char *);
 char *_strncpy(char *dest, char *src, int n);
+char *rot13(char *);
