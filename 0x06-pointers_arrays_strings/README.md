@@ -5,3 +5,4 @@
 4-rev_array.c function that reverses an integer array.
 5-string_toupper.c function that changes all lowercase of a string to upper case.
 7-leet.c function that encodes a string into 1337
+101-print_number.c: prints an integer.
