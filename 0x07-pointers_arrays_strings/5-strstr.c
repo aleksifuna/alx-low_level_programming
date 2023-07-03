@@ -28,7 +28,6 @@ char *_strstr(char *haystack, char *needle)
 				{
 					sb = &haystack[i];
 					flag = 1;
-					break;
 				}
 			}
 		}
