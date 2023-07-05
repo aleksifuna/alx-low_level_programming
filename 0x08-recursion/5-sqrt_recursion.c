@@ -13,7 +13,7 @@ int sqt(int n, int i)
 	}
 	else if (n < 0)
 	{
-		return (3000);
+		return (-3000);
 	}
 	else
 	{
@@ -35,7 +35,7 @@ int _sqrt_recursion(int n)
 	{
 		return (0);
 	}
-	else if (sqt(n, 1) > 1000)
+	else if (sqt(n, 1) < 0)
 		return (-1);
 	else
 		return (sqt(n, 1));
