@@ -3,15 +3,15 @@
 #include <ctype.h>
 #include <string.h>
 /**
- * main - adds postive integers.
- * @argc: number of positive numbers to be added
- * @argv: numbers to be added.
+ * dig_check - checks if a string has digits
+ * @str: string to be checked.
  *
- * Return: 0 if successful else 1.
+ * Return: 1 or 0.
  */
 int dig_check(char *str)
 {
 	unsigned int k;
+
 	for (k = 0; k < strlen(str); k++)
 	{
 		if (!isdigit(str[k]))
@@ -21,7 +21,13 @@ int dig_check(char *str)
 	}
 	return (1);
 }
-			
+/**
+ * main - Entry point
+ * @argc: number of arguments
+ * @argv: argument vector
+ *
+ * Return: 0 if successful.
+ */
 int main(int argc, char *argv[])
 {
 	int i, sum;
