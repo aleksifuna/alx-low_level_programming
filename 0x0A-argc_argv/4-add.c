@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 /**
  * main - adds postive integers.
  * @argc: number of positive numbers to be added
@@ -7,6 +9,19 @@
  *
  * Return: 0 if successful else 1.
  */
+int dig_check(char *str)
+{
+	unsigned int k;
+	for (k = 0; k < strlen(str); k++)
+	{
+		if (!isdigit(str[k]))
+		{
+			return (0);
+		}
+	}
+	return (1);
+}
+			
 int main(int argc, char *argv[])
 {
 	int i, sum;
@@ -16,7 +31,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (atoi(argv[i]) != 0)
+			if (dig_check(argv[i]))
 			{
 				sum += atoi(argv[i]);
 			}
