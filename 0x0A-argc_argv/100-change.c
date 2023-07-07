@@ -21,6 +21,13 @@ int change(int num)
 	else if (num % 1 == 0)
 		return (1 + change(num - 1));
 }
+/**
+ * main - Entry point.
+ * @argc: number of arguments
+ * @argv: argument vector
+ *
+ * Return: 0 is successful.
+ */
 int main(int argc, char *argv[])
 {
 	if (argc != 2)
