@@ -30,19 +30,21 @@ int change(int num)
  */
 int main(int argc, char *argv[])
 {
-	if (argc != 2)
+	if (argc == 2)
 	{
-		printf("Error\n");
-		return (1);
-	}
-	else if (atoi(argv[1]) <= 0)
-	{
-		printf("0\n");
+		if (atoi(argv[1]) <= 0)
+		{
+			printf("0\n");
+		}
+		else
+		{
+			printf("%d\n", change(atoi(argv[1])));
+		}
 		return (0);
 	}
 	else
 	{
-		printf("%d\n", change(atoi(argv[1])));
-		return (0);
+		printf("Error\n");
+		return (1);
 	}
 }
