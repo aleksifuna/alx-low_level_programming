@@ -10,7 +10,8 @@ char **strtow(char *str)
 {
 	int len, count, i, j;
 	char *strcop, *strcop2, *token, **arr;
-	if (str == NULL || str == "")
+
+	if (str == NULL)
 		return (NULL);
 	strcop = strdup(str);
 	strcop2 = strdup(str);
@@ -26,7 +27,7 @@ char **strtow(char *str)
 	arr = malloc((count + 1) * sizeof(char *));
 	if (arr == NULL)
 		return (NULL);
-	token = strtok(strcop, " ");
+	token = strtok(strcop2, " ");
 	while (token != NULL)
 	{
 		len = strlen(token);
