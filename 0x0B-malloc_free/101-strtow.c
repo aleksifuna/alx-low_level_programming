@@ -11,7 +11,7 @@ char **strtow(char *str)
 	int len, count, i, j;
 	char *strcop, *strcop2, *token, **arr;
 
-	if (str == NULL)
+	if (str == NULL || strcmp(str, "") == 0)
 		return (NULL);
 	strcop = strdup(str);
 	strcop2 = strdup(str);
