@@ -24,6 +24,8 @@ char **strtow(char *str)
 		count++;
 		token = strtok(NULL, " ");
 	}
+	if (count == 0)
+		return (NULL);
 	arr = malloc((count + 1) * sizeof(char *));
 	if (arr == NULL)
 		return (NULL);
@@ -40,5 +42,6 @@ char **strtow(char *str)
 	}
 	arr[i] = NULL;
 	free(strcop);
+	free(strcop2);
 	return (arr);
 }
