@@ -5,3 +5,4 @@ What does a function pointer exactly hold
 Where does a function pointer point to in the virtual memory
 
 0-print_name.c - prints a name
+1-array_iterator.c - itterates through an array using callback
