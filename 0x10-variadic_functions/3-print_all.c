@@ -49,7 +49,7 @@ void print_all(const char *const format, ...)
 				printf("%s", strn);
 			break;
 		default:
-			break;
+			continue;
 		}
 		i++;
 	}
