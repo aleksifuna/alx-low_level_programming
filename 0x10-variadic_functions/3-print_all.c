@@ -9,7 +9,7 @@
  */
 void print_sep(unsigned int i, const char *const str)
 {
-	if (i < strlen(str) - 1)
+	if (str[i + 1] != '\0')
 		printf(", ");
 }
 /**
@@ -49,7 +49,7 @@ void print_all(const char *const format, ...)
 				printf("%s", strn);
 			break;
 		default:
-			continue;
+			break;
 		}
 		i++;
 	}
