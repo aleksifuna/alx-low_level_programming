@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <stdarg.h>
-#include <stddef.h>
-#include <string.h>
 /**
  * print_all - prints anything
  * @format: list of all arguments passed to the function
@@ -34,7 +32,7 @@ void print_all(const char *const format, ...)
 				break;
 			case 's':
 				strn = va_arg(ap, char *);
-				if (strn == NULL)
+				if (!strn)
 					printf("%s(nil)", sep);
 				else
 					printf("%s%s", sep, strn);
