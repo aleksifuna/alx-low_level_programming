@@ -44,7 +44,7 @@ void print_all(const char *const format, ...)
 			sep = ", ";
 			i++;
 		}
-		printf("\n");
-		va_end(ap);
 	}
+	prinf("\n");
+	va_end(ap);
 }
