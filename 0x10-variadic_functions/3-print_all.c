@@ -7,14 +7,13 @@
  */
 void print_all(const char *const format, ...)
 {
-	unsigned int i;
-	char *strn, *sep;
-	va_list ap;
+	int i= 0;
+	char *strn, *sep = "";
 
-	va_start(ap, format);
+	va_list list;
 
-	i = 0;
-	sep = "";
+	va_start(list, format);
+
 	if (format)
 	{
 
@@ -23,16 +22,16 @@ void print_all(const char *const format, ...)
 			switch (format[i])
 			{
 			case 'i':
-				printf("%s%d", sep, va_arg(ap, int));
+				printf("%s%d", sep, va_arg(list, int));
 				break;
 			case 'c':
-				printf("%s%c", sep, va_arg(ap, int));
+				printf("%s%c", sep, va_arg(list, int));
 				break;
 			case 'f':
-				printf("%s%f", sep, va_arg(ap, double));
+				printf("%s%f", sep, va_arg(list, double));
 				break;
 			case 's':
-				strn = va_arg(ap, char *);
+				strn = va_arg(list, char *);
 				if (!strn)
 					printf("%s(nil)", sep);
 				else
@@ -47,5 +46,5 @@ void print_all(const char *const format, ...)
 		}
 	}
 	printf("\n");
-	va_end(ap);
+	va_end(list);
 }
