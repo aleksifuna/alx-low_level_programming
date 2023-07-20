@@ -5,7 +5,7 @@
  * print_all - prints anything
  * @format: list of all arguments passed to the function
  */
-void print_all(const char *const format, ...)
+void print_all(const char * const format, ...)
 {
 	int i= 0;
 	char *strn, *sep = "";
@@ -21,11 +21,11 @@ void print_all(const char *const format, ...)
 		{
 			switch (format[i])
 			{
-			case 'i':
-				printf("%s%d", sep, va_arg(list, int));
-				break;
 			case 'c':
 				printf("%s%c", sep, va_arg(list, int));
+				break;
+			case 'i':
+				printf("%s%d", sep, va_arg(list, int));
 				break;
 			case 'f':
 				printf("%s%f", sep, va_arg(list, double));
