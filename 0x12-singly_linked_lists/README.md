@@ -3,3 +3,4 @@ Learning Objectives
 When and why using linked lists vs arrays
 How to build and use linked lists
 0-print_list.c - prints all the elements in a linked list
+1-list_len.c - returns the number of elements in a list. 
