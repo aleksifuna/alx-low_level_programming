@@ -13,3 +13,5 @@ Start to look for the right source of information without too much help
 6-pop_listint.c - deletes the head node
 7-get_nodeint.c - gets the nth node of a list
 8-sum_listint.c - returns the sum of all the data in alist.
+9-insert_nodeint.c - inserts a new node at a given position.
+10-delete_nodeint.c - deletes the node at index 
