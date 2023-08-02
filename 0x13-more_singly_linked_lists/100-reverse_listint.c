@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * reverse_listint - reverses a lsit
- * @head: pointer to head node 
+ * @head: pointer to head node
  *
  * Return: pointer to head node of reversed list.
  */
@@ -9,7 +9,7 @@ listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *current, *following;
 
-	if (*head == NULL)
+	if (*head == NULL || head == NULL)
 		return (NULL);
 	current = *head;
 	if (current->next == NULL)
@@ -18,7 +18,7 @@ listint_t *reverse_listint(listint_t **head)
 	current->next = NULL;
 	*head = following->next;
 	following->next = current;
-	current =following;
+	current = following;
 	while (current->next != NULL)
 	{
 		following = *head;
