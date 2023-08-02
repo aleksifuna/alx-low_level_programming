@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
  * get_nodeint_at_index - returns the address to the nth node
- * head: address to head node
- * index: index of node starting at 0
+ * @head: address to head node
+ * @index: index of node starting at 0
  *
  * Return: address to the nth node
  */
