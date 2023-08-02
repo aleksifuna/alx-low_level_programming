@@ -14,4 +14,8 @@ Start to look for the right source of information without too much help
 7-get_nodeint.c - gets the nth node of a list
 8-sum_listint.c - returns the sum of all the data in alist.
 9-insert_nodeint.c - inserts a new node at a given position.
-10-delete_nodeint.c - deletes the node at index 
+10-delete_nodeint.c - deletes the node at index
+100-reverse_listint.c - reverses a list
+101-print_listint_safe.c - prints a list with loop
+102-free_listint_safe.c - frees a list with loop
+103-find_loop.c - find loops 
