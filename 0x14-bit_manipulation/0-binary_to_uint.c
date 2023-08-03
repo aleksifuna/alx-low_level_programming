@@ -19,7 +19,7 @@ unsigned int pwr(unsigned int num)
 }
 /**
  * _strlen - counts the length of a string
- * str: the string
+ * @str: string to count
  *
  * Return: length of a string
  */
