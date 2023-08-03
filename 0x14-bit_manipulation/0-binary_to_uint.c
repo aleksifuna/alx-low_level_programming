@@ -18,6 +18,22 @@ unsigned int pwr(unsigned int num)
 	return (results);
 }
 /**
+ * _strlen - counts the length of a string
+ * str: the string
+ *
+ * Return: length of a string
+ */
+unsigned int _strlen(const char *s)
+{
+	unsigned int len;
+
+	len = 0;
+	while (s[len] != '\0')
+		len++;
+	return (len);
+}
+
+/**
  * binary_to_uint - converts a binary to unsigned int
  * @b: string of 1 and 0 to be converted
  *
@@ -27,7 +43,6 @@ unsigned int binary_to_uint(const char *b)
 {
 	unsigned int dec, idx, exp;
 
-	exp = strlen(b) - 1;
 	idx = 0;
 	dec = 0;
 	if (b == NULL)
@@ -35,6 +50,7 @@ unsigned int binary_to_uint(const char *b)
 		dec = 0;
 		return (dec);
 	}
+	exp = _strlen(b) - 1;
 	while (b[idx] != '\0')
 	{
 		if (b[idx] != '1' && b[idx] != '0')
