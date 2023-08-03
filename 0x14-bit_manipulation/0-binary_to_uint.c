@@ -23,12 +23,12 @@ unsigned int pwr(unsigned int num)
  *
  * Return: length of a string
  */
-unsigned int _strlen(const char *s)
+unsigned int _strlen(const char *str)
 {
 	unsigned int len;
 
 	len = 0;
-	while (s[len] != '\0')
+	while (str[len] != '\0')
 		len++;
 	return (len);
 }
