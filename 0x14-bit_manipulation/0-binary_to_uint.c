@@ -8,6 +8,7 @@
 unsigned int pwr(unsigned int num)
 {
 	unsigned int results;
+
 	results = 1;
 	while (num > 0)
 	{
