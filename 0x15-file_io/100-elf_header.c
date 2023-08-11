@@ -9,6 +9,7 @@ void print_class(unsigned char *head);
 void print_data(unsigned char *head);
 void print_version(unsigned char *head);
 void print_osabi(unsigned char *head);
+void print_abiver(unsigned char *head);
 void print_type(uint16_t type);
 void print_entry(uint32_t entry);
 /**
@@ -50,6 +51,7 @@ int main(int ac, char **av)
 	print_data(header->e_ident);
 	print_version(header->e_ident);
 	print_osabi(header->e_ident);
+	print_abiver(header->e_ident);
 	print_type(header->e_type);
 	print_entry(header->e_entry);
 	close(fd);
@@ -194,6 +196,16 @@ void print_osabi(unsigned char *head)
 	default:
 		break;
 	}
+}
+/**
+ * print_abiver - prints the abi version
+ * @head: entry field in header
+ */
+void print_abiver(unsigned char *head)
+{
+	char msg[] = "ABI Version:";
+
+	printf("  %-35s%d\n", msg, head[8]);
 }
 /**
  * print_type - prints the type of the Elf file
