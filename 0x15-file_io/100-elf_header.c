@@ -67,8 +67,8 @@ void confirm_elf(unsigned char *head)
 	char elf_mgc[4];
 	int i;
 	char *str;
-	char msg[] = "elf_header: Error: Not an ELF file - it has the "
-		"wrong magic bytes at the start\n";
+	char msg[] = "elf_header: Error: Not an ELF file - it has the wrong";
+	char msg2[] = "magic bytes at the start\n";
 
 	str = "Magic:";
 	elf_mgc[0] = 0x7f;
@@ -79,7 +79,7 @@ void confirm_elf(unsigned char *head)
 	{
 		if (head[i] != elf_mgc[i])
 		{
-			dprintf(STDERR_FILENO, "%s", msg);
+			dprintf(STDERR_FILENO, "%s %s", msg, msg2);
 			exit(98);
 		}
 	}
