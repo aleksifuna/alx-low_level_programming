@@ -9,6 +9,10 @@ def island_perimeter(grid):
     calculates and returns the perimeter of theisland described in grid
     """
     perimeter = 0
+    if 1 in grid[0]:
+        return perimeter
+    if 1 in grid[len(grid) - 1]:
+        return perimeter
     for i in range(1, len(grid) - 1):
         for j in range(1, len(grid) - 1):
             if grid[i][j] == 1:
